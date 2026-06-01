@@ -1,0 +1,18 @@
+name = "treasury-monitor-worker"
+main = "index.js"
+compatibility_date = "2024-01-01"
+workers_dev = true
+
+# Uncomment jika ingin custom domain:
+# routes = [
+#   { pattern = "api.yourdomain.com/*", zone_name = "yourdomain.com" }
+# ]
+
+[build]
+# Tidak perlu build step untuk vanilla JS Worker
+
+# Rate limiting (opsional, butuh Workers Paid plan)
+# [[unsafe.bindings]]
+# name = "MY_KV"
+# type = "kv_namespace"
+# namespace_id = "..."
